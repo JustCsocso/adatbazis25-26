@@ -1,0 +1,27 @@
+CREATE DATABASE tisza;
+Use tisza;
+
+--12.feladat
+DELETE FROM meres
+WHERE nap = '2020-03-27';
+
+-- 13. feladat
+UPDATE vizmerce
+SET igId = 2
+WHERE varos = 'Tokaj';
+
+-- 14. feladat
+SELECT varos, nullPont
+FROM vizmerce
+ORDER BY nullPont ASC
+LIMIT 1;
+
+-- 15. feladat
+SELECT varos, (lnv - lkv) AS ingadozas
+FROM vizmerce
+ORDER BY ingadozas DESC;
+
+--16.feladat
+Select nev,id as merceszam From igazgatosag;
+
+--17.feladat
